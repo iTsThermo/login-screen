@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --font: "Oswald", sans-serif;
+    --color: #E5E7EB;
+    --green-acsent: #596D48;
+}
+
+*{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-side{
+    display: flex;
+    flex: 2;
+    position: relative;
+}
+
+.overlap{ 
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    margin-top: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.overlap .logo{
+    flex: 1;
+    max-height: 25%;
+    min-width: 25%;
+    padding-left: 15%;
+}
+
+.left-side p{
+    flex: 2;
+    font-size: 200%;
+    color: white;
+    font-family: var(--font);
+    text-align: center;
+}
+
+.background-img{
+    flex: 1;
+}
+
+.right-side{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.header h1{
+    padding-top: 15%;
+    font-size: 2rem;
+    font-family: var(--font);
+}
+
+.header h3{
+    font-size: 1.5rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: var(--font);
+}
+
+form{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.forms-container{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+fieldset{
+    border: none;
+    flex: 2;
+    display: flex;
+    box-shadow: 0px 5px 25px var(--color);
+    flex-direction: column;
+}
+
+fieldset>p{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 3%;
+    font-family: var(--font);
+}
+
+fieldset label{
+    font-size: .75rem;
+    font-family: var(--font);
+    letter-spacing: .05rem;
+    margin-bottom: 2%;
+}
+
+input{
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px var(--color);
+    height: 1.25rem;
+    width: 10rem;
+}
+
+input:focus{
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: 1px solid blue;
+}
+
+fieldset>div{
+    display: flex;
+    gap: 10%;
+    padding-bottom: 3%;
+}
+
+fieldset div div{
+    display: flex;
+    flex-direction: column;
+}
+
+.col1>div, .col2>div{
+    margin-top: 10%;
+}
+
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: var(--green-acsent);
+}
+
+.footer{
+    flex: 3;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer>button{
+    width: 30%;
+    border-radius: 6px;
+    border: none;
+    height: 15%;
+    background-color:var(--green-acsent);
+    color: white;
+    font-family: var(--font);
+    box-shadow: 0px 0px 5px black;
+}
+
+.footer p{
+    font-size: 1rem;
+    font-family: var(--font);
+}
+
+fieldset>div, .footer, .header{
+    padding-left: 3%;
+    padding-right: 3%;
+}

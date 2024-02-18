@@ -5,51 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSSReset.css">
 </head>
 <body>
+<div class="container">
     <div class="left-side">
-        <img class="logo" src="">
-        <img class="background-img" src="">
+    <img class="background-img" src="images/plant.jpg" alt="image of plants"width="200px">
+        <div class="overlap">
+            <img class="logo" src="images/logo.png" alt="logo">
+            <p>Odin Project</p>
+         </div>
     </div>
     <div class="right-side">
         <div class="header">
             <h1>Want to learn more code? We have hundreds of courses and bootcamps that offer a plethora of coding languages, databases, and more!</h1>
-            <h3>Start you coding adventure by <em>creating an account</em> and accessing the lessons we have to offer.</h3>
-            <p>Let's get started!</p>
+            <h3>Start your coding adventure by <em>creating an account</em> and accessing the lessons we have to offer.</h3>
         </div>
-        <div class="forms">
+        <div class="forms-container">
             <form action="" method="post">
-                <div class="textfields">
-                    <div>
-                        <label for="first_name">FIRSTNAME:</label> 
-                        <label for="last_name">LAST NAME:</label>
+                <fieldset>
+                    <p>Let's do this!</p>
+                <div>
+                        <div class="col1">
+                        <div>
+                            <label for="first_name">FIRST NAME</label> 
+                            <input type="text" id="first_name" name="first_name" required></input>
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required></input>
+                        </div>  
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required></input>
+                        </div>
                     </div>
-                    <div>
-                        <input type="text" id="first_name" name="first_name"></input>
-                        <input type="text" id="last_name" name="last_name"></input>
-                    </div>
-                    <div>
-                        <label for="email">EMAIL:</label>
-                        <label for="phone-number">PHONE NUMBER:</label>
-                    </div>
-                    <div>
-                        <input type="email" id="email" name="email"></input>
-                        <input type="number" id="phone-number" name="phone-number"></input>
-                    </div>
-                    <label for="password">PASSWORD:</label>
-                    <label for="confirm-password">CONFIRM PASSWORD:</label>
-                    <div>
-                        <input type="password" id="password" name="password"></input>
-                        <input type="password" id="confirm-password" name="confirm-password"></input>
+                        <div class="col2">
+                            <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name" required></input></div>
+                            <div>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="text" id="phone-number" name="phone-number" required></input></div>
+                            <div>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required></input></div>
                     </div>
                 </div>
+                </fieldset>
                 <div class="footer">
                     <button type="submit">Create Account</button>
-                    <p>Already have an account? <a>Log in</a></p>
+                    <br>
+                    <p>Already have an account? <a href="">Log in</a></p>
                 </div>
             </form>
-            
         </div>
     </div>
+</div>
 </body>
 </html>
