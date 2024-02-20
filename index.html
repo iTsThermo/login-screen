@@ -22,45 +22,54 @@
             <h3>Start your coding adventure by <em>creating an account</em> and accessing the lessons we have to offer.</h3>
         </div>
         <div class="forms-container">
-            <form action="" method="post">
+            <form action="" method="post" id="form" onsubmit="return validate(event)">
                 <fieldset>
                     <p>Let's do this!</p>
                 <div>
-                        <div class="col1">
-                        <div>
+                    <div class="col1">
+                        <div id="first_name-field">
                             <label for="first_name">FIRST NAME</label> 
-                            <input type="text" id="first_name" name="first_name" required></input>
+                            <input type="text" id="first_name" name="first_name"></input>
+                            <p id="first_name-p"></p>
                         </div>
-                        <div>
+                        <div id="email-field">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" required></input>
+                            <input type="text" id="email" name="email"></input>
+                            <p id="email-p"></p>
                         </div>  
-                        <div>
+                        <div id="password-field">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" required></input>
+                            <input type="password" id="password" name="password"></input>
+                            <p id="password-p"></p>
                         </div>
                     </div>
-                        <div class="col2">
-                            <div>
+                    <div class="col2">
+                        <div id="last_name-field">
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" name="last_name" required></input></div>
-                            <div>
-                            <label for="phone-number">PHONE NUMBER</label>
-                            <input type="text" id="phone-number" name="phone-number" required></input></div>
-                            <div>
+                            <input type="text" id="last_name" name="last_name"></input>
+                            <p id="last_name-p"></p>
+                        </div>
+                        <div id="phone_number-field">
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="text" id="phone_number" name="phone_number"></input>
+                            <p id="phone_number-p"></p>
+                        </div>
+                        <div id="confirm_password-field">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password" required></input></div>
+                            <input type="password" id="confirm_password" name="confirm_password"></input>
+                            <p id="confirm_password-p"></p>
+                        </div>
                     </div>
                 </div>
                 </fieldset>
                 <div class="footer">
-                    <button type="submit">Create Account</button>
-                    <br>
+                    <button id="btn" type="submit">Create Account</button><br>
                     <p>Already have an account? <a href="">Log in</a></p>
                 </div>
             </form>
         </div>
     </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
