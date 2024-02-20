@@ -47,7 +47,7 @@ function validate(event){
     const pass = document.getElementById("password");
     const pass_c = document.getElementById("confirm_password");
 
-    for (let i = 0; i < input.length; i++){
+    for (let i = 0; i < input.length-1; i++){
         if (input[i].value == ""){
             console.log(input[i].id);
             requiredText(input[i].id);
@@ -58,7 +58,7 @@ function validate(event){
         }
     }
 
-    if (pass.value != pass_c.value || pass.value == "" || pass_c.value == ""){
+    if (pass.value != pass_c.value){
         passwordError("password");
         passwordError("confirm_password");
         flag = false;
@@ -66,6 +66,14 @@ function validate(event){
     else{
         clearError("password");
         clearError("confirm_password");
+    }
+
+    if (pass.value == ""){
+        requiredText("password");
+    }
+
+    if (pass_c.value == ""){
+        requiredText("confirm_password");
     }
 
     if (!flag){
